@@ -19,7 +19,9 @@ jobs:
         with:
           node-version: "14"
       - name: Install & Tests
-        run: npm test
+        run: |
+        npm install
+        npm test
   build-deploy:
     runs-on: ubuntu-latest
     steps:
